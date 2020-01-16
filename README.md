@@ -2,7 +2,7 @@
 
 이용 사이트 : 프로그래머스
 
-1. 문제 : SELECT 최댓값, 최솟값, 합계 구하기, https://programmers.co.kr/learn/courses/30/lessons/59415
+1. SELECT 최댓값, 최솟값, 합계 구하기, https://programmers.co.kr/learn/courses/30/lessons/59415
 
     - 정답 (최댓값)
     
@@ -24,4 +24,8 @@
     
     1) SELECT count(DISTINCT NAME) from ANIMAL_INS
     
-2. 
+2. 모든 레코드 조회, https://programmers.co.kr/learn/courses/30/lessons/59034
+
+    - 정답
+    
+    1) SELECT * from ANIMAL_INS order by ANIMAL_ID ASC;
