@@ -32,7 +32,7 @@
 
     - 정답 (모든 레코드 조회)
     
-    1) SELECT * from ANIMAL_INS order by ANIMAL_ID ASC;
+        - SELECT * from ANIMAL_INS order by ANIMAL_ID ASC;
     
     - 정답 (역순)
     
