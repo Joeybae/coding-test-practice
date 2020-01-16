@@ -22,6 +22,6 @@
     
     - 중복제거
     
-    1) 
+    1) SELECT count(DISTINCT NAME) from ANIMAL_INS
     
 2. 
