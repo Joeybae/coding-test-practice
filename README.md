@@ -16,6 +16,12 @@
     
     2) SELECT DATETIME from ANIMAL_INS order by DATETIME ASC limit 1;
     
+    - 정답 (합계)
     
+    1) SELECT count(DATETIME) from ANIMAL_INS;
+    
+    - 중복제거
+    
+    1) 
     
 2. 
