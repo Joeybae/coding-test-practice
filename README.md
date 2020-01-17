@@ -10,14 +10,14 @@
 
     - 입력값
         
-        -   heights	        return
+            heights	        return
             [6,9,5,7,4]	    [0,0,2,2,4]
             [3,9,9,3,5,7,2]	[0,0,0,3,3,3,6]
             [1,5,3,6,7,6,5]	[0,0,2,0,0,5,6]
             
      - 정답
      
-        - function solution(heights) {
+            function solution(heights) {
             var answer = [];
             var len = heights.length-1;
             console.log(heights)
