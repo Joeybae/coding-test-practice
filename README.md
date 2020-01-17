@@ -4,6 +4,38 @@
 
 ------------------------
 
+2020년 1월 17일 금요일
+
+1. 탑, https://programmers.co.kr/learn/courses/30/lessons/42588
+
+    - 입력값
+        
+        -   heights	        return
+            [6,9,5,7,4]	    [0,0,2,2,4]
+            [3,9,9,3,5,7,2]	[0,0,0,3,3,3,6]
+            [1,5,3,6,7,6,5]	[0,0,2,0,0,5,6]
+            
+     - 정답
+     
+        - function solution(heights) {
+            var answer = [];
+            var len = heights.length-1;
+            console.log(heights)
+            var i,j;
+            for(i = len;i>=0;i--){
+                answer[i] = 0;
+                for(j=i-1;j>=0;j--){
+                    if(heights[i] < heights[j]){
+                        answer[i] = j+1;
+                        break;
+                    }
+                }
+            }
+            return answer;
+            }
+
+------------------------
+
 2020년 1월 16일 목요일
 
 1. SELECT 최댓값, 최솟값, 합계 구하기, https://programmers.co.kr/learn/courses/30/lessons/59415
