@@ -2,11 +2,38 @@
 
 이용 사이트 : 프로그래머스
 
-------------------------
+----------------------------
+
+2020 1월 18일 토요일
+
+1.모의고사, https://programmers.co.kr/learn/courses/30/lessons/42840?language=javascript (실패)
+
+    function solution(answers) {
+        var answer = [];
+        const man1 = [1, 2, 3, 4, 5];
+        const man2 = [2, 1, 2, 3, 2, 4, 2, 5];
+        const man3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5];
+        let count = [0, 0, 0];
+
+        for(let i = 0; i < answers.length; i++) {
+            if(answers[i] == man1[i % man1.length]) count[0]++;
+            if(answers[i] == man2[i % man2.length]) count[1]++;
+            if(answers[i] == man3[i % man3.length]) count[2]++;
+        }
+
+        const max = Math.max(count[0], count[1], count[2]);
+        for(let i = 0; i < count.length; i++) {
+            if(max == count[i]) answer.push(i + 1);
+        }
+
+        return answer;
+    }
+
+----------------------------
 
 2020년 1월 17일 금요일
 
-1. 탑, https://programmers.co.kr/learn/courses/30/lessons/42588
+1. 탑, https://programmers.co.kr/learn/courses/30/lessons/42588 (실패)
 
     - 입력값 / 출력값
         
@@ -34,7 +61,7 @@
             return answer;
             }
             
- 2. 완주하지 못한 선수, https://programmers.co.kr/learn/courses/30/lessons/42576
+ 2. 완주하지 못한 선수, https://programmers.co.kr/learn/courses/30/lessons/42576 (실패)
  
     - 입력값 / 출력값
     
