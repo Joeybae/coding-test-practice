@@ -4,7 +4,27 @@
 
 ----------------------------
 
-2020 1월 18일 일요일
+2020 1월 20일 월요일
+
+1. K번째 수, https://programmers.co.kr/learn/courses/30/lessons/42748 (2번째 test 틀림, 정확률 85.7%), 틀린 이유는 sort부분으로 function 추가로 수정완료.
+
+        function solution(array, commands) {
+            var answer = [];
+            for(var x=0; x < commands.length; x++){
+                var i = commands[x][0];
+                var j = commands[x][1];
+                var k = commands[x][2];
+                var temp = array.slice(i-1, j).sort(function(a,b){
+                    return a-b;
+                });
+                answer.push(temp[k-1]);
+            }
+            return answer;
+        }
+
+----------------------------
+
+2020 1월 19일 일요일
 
 - 이전 문제 확인 및 재공부
 
