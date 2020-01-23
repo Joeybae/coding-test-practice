@@ -6,7 +6,7 @@
 
 2020 1월 20일 월요일
 
-1. K번째 수, https://programmers.co.kr/learn/courses/30/lessons/42748 (2번째 test 틀림, 정확률 85.7%), 틀린 이유는 sort부분으로 function 추가로 수정완료.
+1. K번째 수, https://programmers.co.kr/learn/courses/30/lessons/42748 (2번째 test 틀림, 정확률 85.7%), 틀린 이유는 sort부분으로 function 추가로 수정.
 
         function solution(array, commands) {
             var answer = [];
